@@ -4,9 +4,15 @@ interface HeadingProps {
   subHeading: string;
   heading: string;
   description: string;
+  textAlignment?: string;
 }
 
-const Heading = ({ subHeading, heading, description }: HeadingProps) => {
+const Heading = ({
+  subHeading,
+  heading,
+  description,
+  textAlignment,
+}: HeadingProps) => {
   return (
     <div className={styles.heading}>
       <div className={styles.frame100}>
@@ -17,7 +23,8 @@ const Heading = ({ subHeading, heading, description }: HeadingProps) => {
             fontSize: "14px",
             fontWeight: "600",
             lineHeight: "25.2px",
-            textAlign: "center",
+            // @ts-ignore
+            textAlign: textAlignment ?? "center",
             color: "rgba(139, 69, 19, 1)",
           }}
         >
@@ -30,7 +37,8 @@ const Heading = ({ subHeading, heading, description }: HeadingProps) => {
             fontSize: "42px",
             fontWeight: "500",
             lineHeight: "54.6px",
-            textAlign: "center",
+            // @ts-ignore
+            textAlign: textAlignment ?? "center",
             color: "rgba(10, 1, 23, 1)",
           }}
         >
@@ -39,12 +47,13 @@ const Heading = ({ subHeading, heading, description }: HeadingProps) => {
       </div>
       <p
         style={{
-          width: "936px",
-          height: "64px",
+          // width: "936px",
+          // height: "64px",
           fontSize: "18px",
           fontWeight: "400",
           lineHeight: "32.4px",
-          textAlign: "center",
+          // @ts-ignore
+          textAlign: textAlignment ?? "center",
           color: "rgba(105, 111, 140, 1)",
         }}
       >

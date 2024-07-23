@@ -13,7 +13,7 @@ export default function About() {
               promoting responsible pet ownership. We
               uplift both animals and communities."
       />
-      <div className={styles.content}>
+      <div className="content">
         <div className={styles.frame13}>
           <div className={styles.frame12}>
             <p

@@ -1,0 +1,20 @@
+.donation {
+    margin-top: 6rem;
+    gap: 153px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.frame54 {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 815px;
+    height: 560px;
+    margin-left: 7rem;
+    gap: 56px
+}

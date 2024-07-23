@@ -18,28 +18,8 @@ const Card = ({ image, heading, description }: CardProps) => {
         <div className={styles.frame41}>
           <div className={styles.frame39}>
             <div className={styles.frame38}>
-              <p
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "500",
-                  lineHeight: "25.2px",
-                  letterSpacing: "0.15em",
-                  textAlign: "left",
-                }}
-              >
-                Goal : $1340
-              </p>
-              <p
-                style={{
-                  fontSize: "16px",
-                  fontWeight: "500",
-                  lineHeight: "25.2px",
-                  letterSpacing: "0.15em",
-                  textAlign: "left",
-                }}
-              >
-                Raised : $800
-              </p>
+              <span>Goal : $1340</span>
+              <span>Raised : $800</span>
             </div>
             <ProgressBar
               completed={60}

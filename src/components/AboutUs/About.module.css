@@ -3,26 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 969px;
+    margin: 5rem auto;
     gap: 56px;
-    width: 100%;
-}
-
-.content {
-    height: 430px;
-    display: flex;
-    justify-content: center;
     width: 100%;
 }
 
 .frame13 {
     width: 593px;
-    height: 350px;
     gap: 48px;
 }
 
 .frame12 {
     width: 593px;
-    height: 246px;
     gap: 24px;
 }

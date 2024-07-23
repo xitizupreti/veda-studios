@@ -22,9 +22,8 @@ body {
   background-color: rgba(139, 69, 19, 1);
 }
 
-.customCompleted {
-  background-color: rgba(139, 69, 19, 1);
-  width: 42px;
-  height: 26px;
-  border-radius: 2px;
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
