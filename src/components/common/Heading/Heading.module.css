@@ -1,0 +1,14 @@
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    width: 936px;
+    height: 180px;
+    gap: 24px;
+}
+
+.frame100 {
+    align-self: center;
+    height: 92px;
+}

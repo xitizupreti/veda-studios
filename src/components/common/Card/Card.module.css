@@ -1,0 +1,36 @@
+.card {
+    width: 452px;
+    height: 636px;
+    border-radius: 8px;
+}
+
+.frame41 {
+    width: 452px;
+    height: 334px;
+}
+
+.frame39 {
+    width: 452px;
+    height: 115px;
+    padding: 32px;
+    gap: 16px;
+}
+
+.frame38 {
+    width: 388px;
+    height: 29px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.frame40 {
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 452px;
+    height: 219px;
+    padding: 32px;
+    gap: 16px;
+}

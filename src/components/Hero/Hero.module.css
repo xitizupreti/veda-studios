@@ -1,0 +1,54 @@
+.hero {
+    height: 969px;
+    background: rgba(147, 206, 170, 1);
+    /* width: 100vw; */
+}
+
+.arrow {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 52px;
+    height: 120px;
+    top: 390px;
+    left: 85px;
+    gap: 16px;
+}
+
+.heroText {
+    position: absolute;
+    width: 816px;
+    height: 369px;
+    top: 234px;
+    left: 250px;
+}
+
+.frame6 {
+    width: 816px;
+    height: 265px;
+    gap: 24px;
+}
+
+.frame10 {
+    width: 815px;
+    height: 177px;
+    gap: 12px;
+}
+
+.heroImage {
+    position: absolute;
+    width: 420px;
+    height: 623px;
+    top: 237px;
+    left: 999px;
+}
+
+.rectangle {
+    width: 420px;
+    height: 560px;
+    gap: 0px;
+    border-radius: 1000px 1000px 0px 0px;
+    border: 8px;
+    background-color: rgba(17, 2, 39, 1);
+    border: 8px solid rgba(255, 255, 255, 1);
+}
