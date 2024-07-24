@@ -27,8 +27,8 @@ export default function CTA() {
             src="/Dogcta.png"
             alt="dog"
             width={393}
-            height={393}
-            style={{ position: "relative", bottom: "34px", left: "-35px" }}
+            height={373}
+            style={{ position: "relative" }}
           />
           <div
             style={{

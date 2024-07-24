@@ -5,6 +5,8 @@ import Donation from "@/components/Donation/Donation";
 import Event from "@/components/EventPage/Event";
 import Testimonials from "@/components/Testimonials/Testimonials";
 import CTA from "@/components/CTA/CTA";
+import Footer from "@/components/FooterSection/Footer";
+
 export default function Home() {
   return (
     <div
@@ -19,6 +21,7 @@ export default function Home() {
       <Event />
       <Testimonials />
       <CTA />
+      <Footer />
     </div>
   );
 }
