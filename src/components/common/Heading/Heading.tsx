@@ -5,6 +5,7 @@ interface HeadingProps {
   heading: string;
   description: string;
   textAlignment?: string;
+  colorC?: string;
 }
 
 const Heading = ({
@@ -12,6 +13,7 @@ const Heading = ({
   heading,
   description,
   textAlignment,
+  colorC,
 }: HeadingProps) => {
   return (
     <div className={styles.heading}>
@@ -39,7 +41,7 @@ const Heading = ({
             lineHeight: "54.6px",
             // @ts-ignore
             textAlign: textAlignment ?? "center",
-            color: "rgba(10, 1, 23, 1)",
+            color: colorC ?? "rgba(10, 1, 23, 1)",
           }}
         >
           {heading}
@@ -54,7 +56,7 @@ const Heading = ({
           lineHeight: "32.4px",
           // @ts-ignore
           textAlign: textAlignment ?? "center",
-          color: "rgba(105, 111, 140, 1)",
+          color: colorC ?? "rgba(105, 111, 140, 1)",
         }}
       >
         {description}

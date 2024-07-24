@@ -4,6 +4,7 @@ import Cause from "@/components/Cause/Cause";
 import Donation from "@/components/Donation/Donation";
 import Event from "@/components/EventPage/Event";
 import Testimonials from "@/components/Testimonials/Testimonials";
+import CTA from "@/components/CTA/CTA";
 export default function Home() {
   return (
     <div
@@ -17,6 +18,7 @@ export default function Home() {
       <Donation />
       <Event />
       <Testimonials />
+      <CTA />
     </div>
   );
 }
