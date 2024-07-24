@@ -1,0 +1,9 @@
+.events {
+    background-color: rgba(253, 247, 244, 1);
+    height: 1208px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
