@@ -1,0 +1,8 @@
+.frame68 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 32px;
+  width: 815px;
+  height: 415px;
+  justify-content: space-evenly;
+}

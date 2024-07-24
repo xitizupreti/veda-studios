@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials/Testimonials";
 import CTA from "@/components/CTA/CTA";
 import Newsletter from "@/components/Newsletter/Newsletter";
 import Footer from "@/components/Footer/Footer";
+
 export default function Home() {
   return (
     <div
