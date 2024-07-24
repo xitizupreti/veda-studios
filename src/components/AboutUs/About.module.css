@@ -1,19 +1,19 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 5rem auto;
-    gap: 56px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  gap: 56px;
+  width: 100%;
 }
 
 .frame13 {
-    width: 593px;
-    gap: 48px;
+  width: 593px;
+  gap: 48px;
 }
 
 .frame12 {
-    width: 593px;
-    gap: 24px;
+  width: 593px;
+  gap: 24px;
 }

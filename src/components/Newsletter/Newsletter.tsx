@@ -1,8 +1,8 @@
 "use client";
 import { useState, ChangeEvent, FormEvent } from "react";
-import styles from "./Footer.module.css";
+import styles from "./Newsletter.module.css";
 
-export default function Footer() {
+export default function Newsletter() {
   const [mail, setMail] = useState<string>("");
   const [errorMessage, setErrorMessage] = useState<string>("");
 
