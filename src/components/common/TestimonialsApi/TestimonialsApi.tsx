@@ -7,7 +7,14 @@ import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+interface Testimonial {
+  imagePath: string;
+  content: string;
+  fullName: string;
+}
+
 export default function TestimonialsApi() {
+  const [data, setData] = useState<Testimonial[]>([]);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -15,23 +22,39 @@ export default function TestimonialsApi() {
       const url = await axios.get(
         `https://raw.githubusercontent.com/Himal-Marasini/frontend-task/main/testinomial_data.json`
       );
-      setIndex(url.data.testimonial[index]);
-      console.log(url.data.testimonial[index]);
+      setData(url.data.testimonial);
+      console.log(url.data.testimonial);
     }
     Data();
   }, []);
 
   const handleNext = () => {
-    setIndex(index + 1);
+    // setIndex((prevIndex) => (prevIndex + 1) % data.length);
+    if (index < data.length - 1) {
+      setIndex((prevIndex) => prevIndex + 1);
+    }
   };
 
   const handlePrev = () => {
-    setIndex(index - 1);
+    // setIndex((prevIndex) =>
+    //   prevIndex === 0 ? data.length - 1 : prevIndex - 1
+    // );
+    if (index > 0) {
+      setIndex((prevIndex) => prevIndex - 1);
+    }
   };
-
+  if (data.length === 0) {
+    return <div>Loading...</div>;
+  }
+  const currentTestimonial = data[index];
   return (
     <div className="content">
-      <Image src={index.imagePath} alt="testimonial" width={452} height={560} />
+      <Image
+        src={currentTestimonial.imagePath}
+        alt="testimonial"
+        width={452}
+        height={560}
+      />
       <div className={styles.frame68}>
         <FormatQuoteIcon
           style={{
@@ -49,7 +72,7 @@ export default function TestimonialsApi() {
             lineHeight: "43.2px",
           }}
         >
-          {index.content}
+          {currentTestimonial.content}
         </p>
         <p
           style={{
@@ -60,17 +83,19 @@ export default function TestimonialsApi() {
             lineHeight: "23.4px",
           }}
         >
-          {index.fullName}
+          {currentTestimonial.fullName}
         </p>
         <div style={{ width: "120px", height: "52px" }}>
           <KeyboardArrowLeftIcon
             onClick={handlePrev}
             style={{
-              marginLeft: "2px",
               padding: "16px",
-              color: "rgba(216,197,183,1)",
+              cursor: index === 0 ? "default" : "pointer",
+              color:
+                index === 0 ? "rgba(216,197,183,1)" : "rgba(255,255,255,1)",
+              backgroundColor:
+                index === 0 ? "rgba(253,247,244,1)" : "rgba(139, 69, 19, 1)",
               borderRadius: "50%",
-              backgroundColor: " rgba(253,247,244,1)",
               height: "52px",
               width: "52px",
             }}
@@ -78,12 +103,20 @@ export default function TestimonialsApi() {
           <KeyboardArrowRightIcon
             onClick={handleNext}
             style={{
+              marginLeft: "2px",
               padding: "16px",
-              color: "rgba(255,255,255,1)",
               borderRadius: "50%",
-              backgroundColor: " rgba(139, 69, 19, 1)",
               height: "52px",
               width: "52px",
+              cursor: index === data.length - 1 ? "default" : "pointer",
+              color:
+                index === data.length - 1
+                  ? "rgba(216,197,183,1)"
+                  : "rgba(255,255,255,1)",
+              backgroundColor:
+                index === data.length - 1
+                  ? "rgba(253,247,244,1)"
+                  : "rgba(139, 69, 19, 1)",
             }}
           />
         </div>

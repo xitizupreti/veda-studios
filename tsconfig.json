@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/components/Newsletter/Newsletter.tsx"
+    "src/components/Newsletter/Newsletter.tsx",
+    "src/components/common/TestimonialsApi/TestimonialsApi.tsx"
   ],
   "exclude": ["node_modules"]
 }
