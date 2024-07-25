@@ -36,7 +36,7 @@ our mission to improve the lives of all animals."
             />
             <div className={styles.ctaButton}>
               <button
-                className="navbut2"
+                className="navButton2"
                 style={{
                   backgroundColor: "rgba(255,255,255,1)",
                   color: "rgba(139,69,19,1)",
@@ -58,7 +58,7 @@ our mission to improve the lives of all animals."
                 />
               </button>
               <button
-                className="navbut2"
+                className="navButton2"
                 style={{
                   backgroundColor: "rgba(255,255,255,1)",
                   color: "rgba(139,69,19,1)",

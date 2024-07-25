@@ -12,26 +12,25 @@
   z-index: 11;
 }
 
-.frame4 {
+.navList {
   display: flex;
   gap: 1rem;
 }
 
-.frame2 {
+.navListol {
   list-style-type: none;
   display: flex;
-
   gap: 0px;
   border: 0px 0px 0px 1px;
 }
 
-.frame2 li {
+.navListol li {
   display: flex;
   padding: 8px 24px 8px 24px;
   gap: 7px;
 }
 
-.frame3 {
+.navButtons {
   gap: 8px;
   display: flex;
 }
@@ -56,7 +55,7 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .frame2 {
+  .navListol {
     display: none;
   }
 }
