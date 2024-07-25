@@ -1,15 +1,15 @@
 .eventCard {
-    padding: 32px;
-    gap: 56px;
-    width: 30%;
-    border-radius: 8px;
-    background-color: rgba(251, 239, 233, 1);
-    display: flex;
-    flex-direction: column;
+  padding: 32px;
+  gap: 56px;
+  width: 30%;
+  border-radius: 8px;
+  background-color: rgba(251, 239, 233, 1);
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
-    .eventCard {
-        width: 90%;
-    }
+  .eventCard {
+    width: 90%;
+  }
 }

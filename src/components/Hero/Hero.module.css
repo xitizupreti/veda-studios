@@ -1,54 +1,54 @@
 .hero {
-    min-height: 969px;
-    background: rgba(147, 206, 170, 1);
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  min-height: 969px;
+  background: rgba(147, 206, 170, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heroContainer {
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    /* max-width: 800px; */
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  /* max-width: 800px; */
 }
 .heroText {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .arrow {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 52px;
-    height: 120px;
-    /* top: 390px; */
-    right: 2rem;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 52px;
+  height: 120px;
+  /* top: 390px; */
+  right: 2rem;
+  gap: 16px;
 }
 
 .rectangle {
-    width: 420px;
-    /* height: 560px; */
-    gap: 0px;
-    border-radius: 1000px 1000px 0px 0px;
-    border: 8px;
-    background-color: rgba(17, 2, 39, 1);
-    border: 8px solid rgba(255, 255, 255, 1);
+  width: 420px;
+  /* height: 560px; */
+  gap: 0px;
+  border-radius: 1000px 1000px 0px 0px;
+  border: 8px;
+  background-color: rgba(17, 2, 39, 1);
+  border: 8px solid rgba(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 1024px) {
-    .heroContainer {
-        padding: 5rem auto;
-        margin-top: 10rem;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .arrow {
-        display: none;
-    }
+  .heroContainer {
+    padding: 5rem auto;
+    margin-top: 10rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
 }
