@@ -1,7 +1,7 @@
 .testimonials {
   display: flex;
   flex-direction: column;
-  margin: 5rem auto;
+  margin: 2rem auto;
   gap: 56px;
-  width: 100%;
+  width: 80%;
 }

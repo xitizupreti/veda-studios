@@ -14,12 +14,13 @@ body {
 }
 
 .navbut2 {
-  height: 48px;
-  width: 143px;
   border: none;
   border-radius: 8px;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(139, 69, 19, 1);
+  height: 48px;
+  width: 143px;
+  cursor: pointer;
 }
 
 .content {

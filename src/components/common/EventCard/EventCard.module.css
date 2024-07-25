@@ -1,28 +1,15 @@
-.frame64 {
-  width: 452px;
-  height: 352px;
-  padding: 32px;
-  gap: 56px;
-  border-radius: 8px;
-  background-color: rgba(251, 239, 233, 1);
-  display: flex;
-  flex-direction: column;
+.eventCard {
+    padding: 32px;
+    gap: 56px;
+    width: 30%;
+    border-radius: 8px;
+    background-color: rgba(251, 239, 233, 1);
+    display: flex;
+    flex-direction: column;
 }
 
-.frame56 {
-  width: 73px;
-  height: 102px;
-}
-
-.frame60 {
-  width: 388px;
-  height: 130px;
-  gap: 32px;
-}
-
-.frame59 {
-  position: relative;
-  width: 388px;
-  height: 64px;
-  bottom: 15px;
+@media screen and (max-width: 768px) {
+    .eventCard {
+        width: 90%;
+    }
 }

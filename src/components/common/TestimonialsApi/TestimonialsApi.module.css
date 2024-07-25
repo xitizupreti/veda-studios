@@ -1,8 +1,27 @@
-.frame68 {
+.testimonial {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+  min-width: 300px;
+  height: auto;
+}
+
+.testimonialInfo {
   display: flex;
   flex-direction: column;
-  margin-left: 32px;
-  width: 815px;
-  height: 415px;
+  gap: 2rem;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 1024px) {
+  .testimonial {
+    flex-direction: column;
+  }
+  .image {
+    width: 80%;
+  }
 }

@@ -1,9 +1,37 @@
+.ctaContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+}
 .cta {
-    display: flex;
-    overflow: hidden;
-    width: 1420px;
-    height: 359px;
-    border-radius: 8px;
-    background: rgba(139, 69, 19, 1);
-    justify-content: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(139, 69, 19, 1);
+}
+.image {
+  /* width: 80%; */
+  height: auto;
+}
+.ctaContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 8px;
+  z-index: 1;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .image {
+    display: none;
+  }
 }

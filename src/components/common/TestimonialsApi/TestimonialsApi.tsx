@@ -23,7 +23,7 @@ export default function TestimonialsApi() {
         `https://raw.githubusercontent.com/Himal-Marasini/frontend-task/main/testinomial_data.json`
       );
       setData(url.data.testimonial);
-      console.log(url.data.testimonial);
+      // console.log(url.data.testimonial);
     }
     Data();
   }, []);
@@ -48,14 +48,15 @@ export default function TestimonialsApi() {
   }
   const currentTestimonial = data[index];
   return (
-    <div className="content">
+    <div className={styles.testimonial}>
       <Image
         src={currentTestimonial.imagePath}
         alt="testimonial"
         width={452}
         height={560}
+        className={styles.image}
       />
-      <div className={styles.frame68}>
+      <div className={styles.testimonialInfo}>
         <FormatQuoteIcon
           style={{
             width: "45px",
@@ -65,8 +66,6 @@ export default function TestimonialsApi() {
         />
         <p
           style={{
-            width: "815px",
-            height: "172px",
             fontWeight: "400",
             fontSize: "24px",
             lineHeight: "43.2px",
@@ -76,8 +75,6 @@ export default function TestimonialsApi() {
         </p>
         <p
           style={{
-            width: "auto",
-            height: "23px",
             fontWeight: "600",
             fontSize: "18px",
             lineHeight: "23.4px",
@@ -85,7 +82,7 @@ export default function TestimonialsApi() {
         >
           {currentTestimonial.fullName}
         </p>
-        <div style={{ width: "120px", height: "52px" }}>
+        <div>
           <KeyboardArrowLeftIcon
             onClick={handlePrev}
             style={{

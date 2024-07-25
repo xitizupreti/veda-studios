@@ -1,5 +1,9 @@
+import Image from "next/image";
 import styles from "./Testimonials.module.css";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import Heading from "../common/Heading/Heading";
+import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import TestimonialsApi from "../common/TestimonialsApi/TestimonialsApi";
 
 export default function Testimonials() {
