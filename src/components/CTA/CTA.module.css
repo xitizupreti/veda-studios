@@ -29,9 +29,16 @@
   z-index: 1;
   width: 100%;
 }
-
+.ctaButton {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
 @media screen and (max-width: 1024px) {
   .image {
     display: none;
+  }
+  .ctaButton {
+    flex-wrap: wrap;
   }
 }

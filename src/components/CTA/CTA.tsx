@@ -34,14 +34,7 @@ export default function CTA() {
               description="Our work is made possible by the generosity of people like you, who have contributed to
 our mission to improve the lives of all animals."
             />
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                // flexWrap: "wrap",
-                gap: "8px",
-              }}
-            >
+            <div className={styles.ctaButton}>
               <button
                 className="navbut2"
                 style={{
