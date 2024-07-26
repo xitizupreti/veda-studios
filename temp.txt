@@ -1,6 +1,3 @@
 button common
 typescript
-responsive
-height -> margin
-use api testimonials
 styles.id#
