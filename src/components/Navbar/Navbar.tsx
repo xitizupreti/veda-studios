@@ -24,7 +24,7 @@ const Navbar = () => {
         </ul>
       </span>
       <div className={styles.navButtons}>
-        <button id={styles.navbut1}>Volunteer</button>
+        <button id={styles.navButton1}>Volunteer</button>
         <button className='navButton2'>Donate</button>
       </div>
     </div>

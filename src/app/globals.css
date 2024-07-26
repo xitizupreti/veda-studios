@@ -22,6 +22,12 @@ body {
   width: 143px;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .navButton2 {
+    padding: 8px 16px;
+    width: fit-content;
+  }
+}
 
 .content {
   display: flex;
